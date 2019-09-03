@@ -84,7 +84,7 @@ title.addEventListener('mouseover', (event)=> {
 
 paragraph.addEventListener('click', (event) => {
     console.log('You clicked me');
-    event.stopPropagation;
+    event.stopPropagation();
 })
 
 anchors.forEach(element => element.addEventListener('click', (event) => {
