@@ -76,7 +76,16 @@ document.addEventListener('dragend', (event) =>
     console.log("You selected something");
 });
 
+const title = document.querySelector('h2');
 
+title.addEventListener('mouseover', (event)=> {
+    event.target.style.background = 'purple';
+});
+
+paragraph.addEventListener('click', (event) => {
+    console.log('You clicked me');
+    event.stopPropagation;
+})
 
 anchors.forEach(element => element.addEventListener('click', (event) => {
     event.preventDefault();
